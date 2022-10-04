@@ -20,7 +20,8 @@ QString  CallerCalculator::calculate() {
 //===========================================================
 void CallerCalculator::slotButtonClicked() {
   QString str = ((QPushButton*)sender())->text();
-  if (str == "CE") {
+  if (str == "CE"){
+    value2->setReadOnly(false);
     label_1->setStyleSheet("QLabel { color : black; }");
     stk.clear();
     strDisplay = "";
@@ -34,12 +35,13 @@ void CallerCalculator::slotButtonClicked() {
     stk.push(value1->text());
     stk.push(str);
     stk.push(value2->text());
+    value2->setReadOnly(true);
   }
   else {
+   
     stk.push(str);
     stk.push(value1->text());
   }
-
   value1->setText("");
   value2->setText("");
   outResult->setText(calculate());

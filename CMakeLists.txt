@@ -6,8 +6,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-
-# Добавьте источник в исполняемый файл этого проекта.
 add_executable (Calculator "main.cpp" "Calculator.h" "Calculator.cpp" "calculator.ui")
 set(CMAKE_PREFIX_PATH "F:\\Qt\\5.12.12\\msvc2017_64\\lib\\cmake")
 find_package( Qt5 COMPONENTS
@@ -15,7 +13,7 @@ find_package( Qt5 COMPONENTS
     Gui
     Widgets
 REQUIRED)
-# TODO: Добавьте тесты и целевые объекты, если это необходимо.
+
 target_link_libraries(Calculator
 Qt5::Core
 Qt5::Gui
