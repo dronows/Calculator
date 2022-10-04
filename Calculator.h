@@ -8,17 +8,13 @@
 #include <QStack>
 #include "./ui_calculator.h"
 
-class CallerCalculator : public QWidget {
+class CallerCalculator : public QWidget ,public Ui::Calculator{
   Q_OBJECT
  public: 
-   CallerCalculator(QWidget* parent = nullptr) : QWidget(parent) {}
-   QLabel* label_1 = nullptr;
-   QLabel* label_2 = nullptr;
-   QLabel* labelResult = nullptr;
-
-   QLineEdit* value1 = nullptr;
-   QLineEdit* value2 = nullptr;
-   QLineEdit* outResult = nullptr;
+   CallerCalculator(QWidget* parent = nullptr) : QWidget(parent) {
+     setupUi(this);
+   }
+  
    QString calculate();
  public slots :
    void slotButtonClicked();

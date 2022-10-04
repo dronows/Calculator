@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>771</width>
+    <width>886</width>
     <height>528</height>
    </rect>
   </property>
@@ -53,6 +53,9 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
        <property name="placeholderText">
         <string/>
@@ -296,7 +299,7 @@ color: rgb(255, 255, 255);</string>
    <slot>slotButtonClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>501</x>
+     <x>573</x>
      <y>288</y>
     </hint>
     <hint type="destinationlabel">
@@ -312,7 +315,7 @@ color: rgb(255, 255, 255);</string>
    <slot>slotButtonClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>501</x>
+     <x>573</x>
      <y>369</y>
     </hint>
     <hint type="destinationlabel">
@@ -328,7 +331,7 @@ color: rgb(255, 255, 255);</string>
    <slot>slotButtonClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>483</x>
+     <x>573</x>
      <y>452</y>
     </hint>
     <hint type="destinationlabel">
@@ -344,7 +347,7 @@ color: rgb(255, 255, 255);</string>
    <slot>slotButtonClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>201</x>
+     <x>229</x>
      <y>366</y>
     </hint>
     <hint type="destinationlabel">
@@ -360,7 +363,7 @@ color: rgb(255, 255, 255);</string>
    <slot>slotButtonClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>204</x>
+     <x>229</x>
      <y>451</y>
     </hint>
     <hint type="destinationlabel">
